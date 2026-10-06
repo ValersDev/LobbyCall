@@ -1,0 +1,9 @@
+.git
+.gitignore
+.env
+*.exe
+*.md
+bot.exe
+.idea
+.vscode
+.cursor
