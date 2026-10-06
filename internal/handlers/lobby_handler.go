@@ -6,10 +6,10 @@ import (
 	"log"
 	"strings"
 
-	"valersbot/internal/enums"
-	"valersbot/internal/errs"
-	"valersbot/internal/models"
-	"valersbot/internal/services"
+	"lobbycall/internal/enums"
+	"lobbycall/internal/errs"
+	"lobbycall/internal/models"
+	"lobbycall/internal/services"
 
 	"github.com/bwmarrin/discordgo"
 )

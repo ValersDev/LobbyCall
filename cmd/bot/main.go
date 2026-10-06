@@ -7,10 +7,10 @@ import (
 	"os/signal"
 	"syscall"
 
-	"valersbot/internal/config"
-	"valersbot/internal/handlers"
-	"valersbot/internal/services"
-	"valersbot/internal/storage"
+	"lobbycall/internal/config"
+	"lobbycall/internal/handlers"
+	"lobbycall/internal/services"
+	"lobbycall/internal/storage"
 
 	"github.com/bwmarrin/discordgo"
 )

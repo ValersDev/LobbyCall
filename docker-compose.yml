@@ -1,7 +1,7 @@
 services:
   bot:
     build: .
-    container_name: demons-instinct-bot
+    container_name: lobbycall
     restart: unless-stopped
     env_file:
       - .env

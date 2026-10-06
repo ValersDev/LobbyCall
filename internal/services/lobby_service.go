@@ -5,10 +5,10 @@ import (
 	"regexp"
 	"strconv"
 
-	"valersbot/internal/enums"
-	"valersbot/internal/errs"
-	"valersbot/internal/models"
-	"valersbot/internal/storage"
+	"lobbycall/internal/enums"
+	"lobbycall/internal/errs"
+	"lobbycall/internal/models"
+	"lobbycall/internal/storage"
 )
 
 var horaPattern = regexp.MustCompile(`^([01]?\d|2[0-3]):([0-5]\d)$`)

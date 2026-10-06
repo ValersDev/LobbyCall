@@ -1,4 +1,4 @@
-module valersbot
+module lobbycall
 
 go 1.27.1
 

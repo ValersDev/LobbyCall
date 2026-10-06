@@ -3,8 +3,8 @@ package storage
 import (
 	"sync"
 
-	"valersbot/internal/errs"
-	"valersbot/internal/models"
+	"lobbycall/internal/errs"
+	"lobbycall/internal/models"
 )
 
 type MemoryStore struct {
