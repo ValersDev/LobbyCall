@@ -3,6 +3,7 @@ package config
 import (
 	"log"
 	"os"
+	"strings"
 
 	"github.com/joho/godotenv"
 )
@@ -14,7 +15,8 @@ func Load() *Config {
 	}
 
 	return &Config{
-		Token:   os.Getenv("DISCORD_TOKEN"),
-		GuildID: os.Getenv("GUILD_ID"),
+		Token:       strings.Trim(os.Getenv("DISCORD_TOKEN"), `"'`),
+		GuildID:     strings.Trim(os.Getenv("GUILD_ID"), `"'`),
+		LobbyRoleID: strings.Trim(os.Getenv("LOBBY_ROLE_ID"), `"'`),
 	}
 }

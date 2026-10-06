@@ -1,5 +1,6 @@
 package enums
 
 const (
-	OptionHora = "hora"
+	OptionHora    = "hora"
+	OptionMensaje = "mensaje"
 )
