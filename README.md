@@ -2,7 +2,7 @@
 
 Summon the squad. Vote the mode. Lock the plan.
 
-A Discord lobby bot for scheduling game nights without the group-chat chaos — built in **Go** with a clean handler → service → storage layout.
+A Discord lobby bot for scheduling game nights without the group-chat chaos, built in **Go** with a clean handler → service → storage layout.
 
 One open vote per channel, live tallies, optional role pings, and a custom message so the call actually sounds like your crew.
 
@@ -14,7 +14,7 @@ One open vote per channel, live tallies, optional role pings, and a custom messa
 | --- | --- |
 | `/planificar hora:22:30` | Opens a lobby with vote buttons |
 | `mensaje:` *(optional)* | Adds a custom note to the post |
-| Vote buttons | Flex / 5v5 / ARAM / Chill — one vote per user, switch anytime |
+| Vote buttons | Flex / 5v5 / ARAM / Chill, one vote per user, switch anytime |
 | **Cerrar votación** or `/cerrar` | Locks the lobby, drops buttons, announces the winner |
 
 Also:
@@ -91,7 +91,7 @@ docker compose logs -f
 
 ## Design notes
 
-- Votes update under a write lock — no lost tallies under concurrent clicks
+- Votes update under a write lock, no lost tallies under concurrent clicks
 - Slash commands stay thin; business rules live in `LobbyService`
 - CustomIDs and command names are centralized so Discord strings don’t leak everywhere
 - Memory store keeps the deploy simple; swap the storage layer later without rewriting handlers
